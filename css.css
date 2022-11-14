@@ -1,0 +1,19 @@
+
+body{
+    margin: 0px;
+}
+body, body *{
+    display: grid;
+    place-content: center;
+}
+#main{
+    text-align: center;
+    grid-template-columns: 1fr 1000px 1fr;
+}
+#week,#week>*{
+    border:1px solid black;
+}
+.period{
+    height: 1fr;
+    grid-template-rows: 1fr 1fr;
+}

@@ -5,60 +5,111 @@
             보평고시간표
         </title>
         <meta charset="utf-8">
+        <link href="css.css" rel="stylesheet">
         <style>
             body{
-                text-align: center;
-                display: grid;
-                grid-template-columns: 1fr 500px 1fr;
+                grid-template-columns: 1fr 1000px 1fr;
             }
-            #one {
-                border:1px solid black;
-                display: grid;
+            #week {
                 grid-template-columns:repeat(6, 1fr);
-            }
-            .two{
-                border: 1px solid black;
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: 100px repeat(7, 1fr);
-            }
-            .three{
-                border: 1px solid black;
-                height: 100px;    
+                grid-template-rows:repeat(9, 1fr);
             }
         </style>
     </head>
-    <body>
+    <body id="main">
         <div></div>
-        <div id="one">
-            <div class="two">
+        <div id="week">
+            <div>
+                <h1>시간</h1>
+            </div>
+            <div>
+                <h1>월</h1>
+            </div>
+            <div>
+                <h1>화</h1>
+            </div>
+            <div>
+                <h1>수</h1>
+            </div>
+            <div>
+                <h1>목</h1>
+            </div>
+            <div>
+                <h1>금</h1>
+            </div>
+            <div>조회</div>
+            <a href="https://us05web.zoom.us/j/86912555266?pwd=d3dwejE0eWxURGlsYlpYTkdOSG5RUT09">조회</a>
+            <a href="https://us05web.zoom.us/j/86912555266?pwd=d3dwejE0eWxURGlsYlpYTkdOSG5RUT09">조회</a>
+            <a href="https://us05web.zoom.us/j/86912555266?pwd=d3dwejE0eWxURGlsYlpYTkdOSG5RUT09">조회</a>
+            <span>x</span>
+            <a href="https://us05web.zoom.us/j/86912555266?pwd=d3dwejE0eWxURGlsYlpYTkdOSG5RUT09">조회</a>
+            <div>1교시 9:10-10:00</div>
+            <a href="https://us05web.zoom.us/j/5749842564?pwd=bnUwSjNLTU1tK2pkRk13bWMxbFZLQT09">일본어</a>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <a href="https://us05web.zoom.us/j/7821948221?pwd=TDBPSnd3ampqN3VTZDl3VnJpSkU0Zz09">수IB</a>
+            <div>2교시 10:10-11:00</div>
+            <a href="https://us05web.zoom.us/j/3808854330?pwd=T0xMNG1yVnRSNHJwQk5WUGh5L1Y5UT09">지과</a>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <a href="https://classroom.google.com/u/0/c/NDcwOTI3NTQwNTA2">독서B</a>
+            <div>3교시 11:10-12:00</div>
+            <a href="https://us05web.zoom.us/j/7821948221?pwd=TDBPSnd3ampqN3VTZDl3VnJpSkU0Zz09">수IB</a>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <span></span>
+            <div>4교시 13:00-13:50</div>
+            <span></span>
+            <a href="https://us04web.zoom.us/j/4472005665?pwd=cXBaOEpFNEcxMmt1aFFxZkljVTlVQT09">기하</a>
+            <a href="https://us04web.zoom.us/j/4472005665?pwd=cXBaOEpFNEcxMmt1aFFxZkljVTlVQT09">기하</a>
+            <span>x</span>
+            <span></span>
+            <div>5교시 14:00-14:50</div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <span>x</span>
+            <div>6교시 15:00-15:50</div>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <span>x</span>
+            <span>x</span>
+            <div>7교시 16:00-10:60</div>
+            <span></span>
+            <span></span>
+            <span>x</span>
+            <span>x</span>
+            <span>x</span>
+        </div>
+    </body>
+</html>
+
+<!--
+        <div></div>
+        <div id="week">
+            <div class="day">
                 
-                <div class="three" style="margin: 0px;">
+                <div class="period" style="margin: 0px;">
                     <h1>시간</h1>
                 </div>
-                <div class="three">1교시 9:10-10:00</div>
-                <div class="three">2교시 10:10-11:00</div>
-                <div class="three">3교시 11:10-12:00</div>
-                <div class="three">4교시 13:00-13:50</div>
-                <div class="three">5교시 14:00-14:50</div>
-                <div class="three">6교시 15:00-15:50</div>
-                <div class="three">7교시 16:00-10:60</div>
+                <div class="period first">1교시 9:10-10:00</div>
+                <div class="period">2교시 10:10-11:00</div>
+                <div class="period">3교시 11:10-12:00</div>
+                <div class="period">4교시 13:00-13:50</div>
+                <div class="period">5교시 14:00-14:50</div>
+                <div class="period">6교시 15:00-15:50</div>
+                <div class="period">7교시 16:00-10:60</div>
             </div>
-            <div class="two">
-                <div class="three" style="margin: 0px;">
-                    <h1>월</h1>
+            <iframe src="mon.html" ></iframe>
+            <div class="day">
+                <div class="period">
+                    <h1>수</h1>
                 </div>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-                <a href="https://google.com" class="three">구글!구글!</a>
-            </div>
-            <div class="two">
-                <h1>화</h1>
-                <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
@@ -66,17 +117,10 @@
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
             </div>
-            <div class="two">
-                <h1>수</h1>
-                <a href="https://google.com">구글!구글!</a>
-                <a href="https://google.com">구글!구글!</a>
-                <a href="https://google.com">구글!구글!</a>
-                <a href="https://google.com">구글!구글!</a>
-                <a href="https://google.com">구글!구글!</a>
-                <a href="https://google.com">구글!구글!</a>
-            </div>
-            <div class="two">
-                <h1>목</h1>
+            <div class="day">
+                <div class="period">
+                    <h1>목</h1>
+                </div>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
@@ -85,8 +129,10 @@
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
             </div>
-            <div class="two">
-                <h1>금</h1>
+            <div class="day">
+                <div class="period">
+                    <h1>금</h1>
+                </div>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
                 <a href="https://google.com">구글!구글!</a>
@@ -96,9 +142,7 @@
                 <a href="https://google.com">구글!구글!</a>
             </div>
         </div>
-        <div></div>
-    </body>
-</html>
-<!--섬빗
-묵시룩
-슈되랭거-->
+        <iframe src="jp.html" width="100" height="100"></iframe>
+        <script>
+            document.write(jp.html);
+        </script>-->
